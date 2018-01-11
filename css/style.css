@@ -2,7 +2,7 @@ body{
 
 }
 #fPageBanner{
-  margin-top: 100px;
+  margin-top: 80px;
   width:auto;
   height: 400px;
   background-image: url("../img/banner.jpg");
@@ -24,4 +24,5 @@ body{
  }
   #page-header .row {
     background: white;
+    border-bottom: 1px solid black;
   }
