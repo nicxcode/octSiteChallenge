@@ -1,12 +1,21 @@
 @font-face {
-font-family: 'bignoodle';
+font-family: 'bignoodleO';
 src: url('../fonts/big_noodle_titling_oblique.ttf')
+format('truetype');
+}
+
+@font-face {
+font-family: 'bignoodle';
+src: url('../fonts/big_noodle_titling.ttf')
 format('truetype');
 }
 
 body{
 
 }
+ h1{
+  font-family: 'bignoodle',fantasy;
+ }
 #fPageBanner{
   margin-top: 80px;
   width:auto;
@@ -23,7 +32,7 @@ body{
 
 .header-link{
   font-size: 22px;
-  font-family: 'bignoodle',fantasy;
+  font-family: 'bignoodleO',fantasy;
   color: rgb(248,169,75);
 }
  #header-container{
