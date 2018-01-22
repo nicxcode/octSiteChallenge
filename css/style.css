@@ -1,3 +1,9 @@
+@font-face {
+font-family: 'bignoodle';
+src: url('../fonts/big_noodle_titling_oblique.ttf')
+format('truetype');
+}
+
 body{
 
 }
@@ -17,8 +23,8 @@ body{
 
 .header-link{
   font-size: 22px;
-  font-family: fantasy;
-  color: rgb(112, 28, 186);
+  font-family: 'bignoodle',fantasy;
+  color: rgb(248,169,75);
 }
  #header-container{
    margin-bottom: 10px;
