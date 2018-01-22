@@ -5,11 +5,14 @@ body{
   margin-top: 80px;
   width:auto;
   height: 400px;
-  background-image: url("../img/banner.jpg");
+  background-image: url("../img/soldier-76.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-.logoPic{
-  padding-left:20px;
+#logoPic{
+  width:9em;
+  height: 9em;
 }
 
 .header-link{
@@ -25,4 +28,8 @@ body{
   #page-header .row {
     background: white;
     border-bottom: 1px solid black;
+    height: 100px;
   }
+.pageContent{
+  width=80%;
+}
