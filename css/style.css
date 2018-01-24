@@ -1,3 +1,4 @@
+/* Fonts*/
 @font-face {
 font-family: 'bignoodleO';
 src: url('../fonts/big_noodle_titling_oblique.ttf')
@@ -9,13 +10,38 @@ font-family: 'bignoodle';
 src: url('../fonts/big_noodle_titling.ttf')
 format('truetype');
 }
-
+/* Full Site Changes*/
 body{
 
 }
  h1{
   font-family: 'bignoodle',fantasy;
  }
+
+ /* Header */
+ #logoPic{
+   width:9em;
+   height: 9em;
+ }
+
+ .header-link{
+   font-size: 22px;
+   font-family: 'bignoodleO',fantasy;
+   color: rgb(248,169,75);
+ }
+  #header-container{
+    margin-bottom: 10px;
+    position:relative;
+    background-color: white;
+  }
+   #page-header .row {
+     background: white;
+     border-bottom: 1px solid black;
+     height: 100px;
+   }
+
+/* Front Page */
+
 #fPageBanner{
   margin-top: 80px;
   width:auto;
@@ -25,30 +51,11 @@ body{
   background-position: center;
 }
 
-#logoPic{
-  width:9em;
-  height: 9em;
-}
-
-.header-link{
-  font-size: 22px;
-  font-family: 'bignoodleO',fantasy;
-  color: rgb(248,169,75);
-}
- #header-container{
-   margin-bottom: 10px;
-   position:relative;
-   background-color: white;
- }
-  #page-header .row {
-    background: white;
-    border-bottom: 1px solid black;
-    height: 100px;
-  }
 .pageContent{
   width=80%;
 }
 
+/* Footer */
 .page-footer{
   background-color: rgb(19,19,19);
   color: white;
@@ -56,4 +63,10 @@ body{
 
 .footer-copyright{
   text-align: center;
+}
+
+/* Contact Page */
+.formContent{
+  padding-top: 10em;
+  padding-bottom: 2em;
 }
