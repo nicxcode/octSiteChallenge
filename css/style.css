@@ -53,10 +53,20 @@ body{
 
 .pageContent{
   width=80%;
+  padding-top: 10px;
 }
 
 /* Footer */
+@media screen and (min-width: 765px) {
+  .footerContent{
+    border-right: 1px solid white;
+
+  }
+}
+
+
 .page-footer{
+box-shadow: 0px 1px 1px 0px inset;
   background-color: rgb(19,19,19);
   color: white;
 }
