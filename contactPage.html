@@ -21,13 +21,13 @@
   </div>
 <!-- full form template copied from MDN - edit then update-->
 <div class="container formContent">
-<form>
+<form id="contactForm">
   <div class="form-group">
     <label for="fnameInput">First Name</label>
-    <input type="text" required pattern="[A-Za-z]{2,}" class="form-control" id="fnameInput" placeholder="First Name" title="Please enter a valid first name with no special characters.">
+    <input type="text" required pattern="[A-Za-z]{2,}" class="form-control needs-validation" id="fnameInput" placeholder="First Name" title="Please enter a valid first name with no special characters.">
     <label for="lnameInput">Last Name</label>
-    <input type="text" required pattern="[A-Za-z'-]{2,}" class="form-control" id="lnameInput" placeholder="Last Name"
-    title="Please enter a valid last name with no special characters besides apostrophes or hyphens."> 
+    <input type="text" required pattern="[A-Za-z'-]{2,}" class="form-control needs-validation" id="lnameInput" placeholder="Last Name"
+    title="Please enter a valid last name with no special characters besides apostrophes or hyphens.">
   </div>
   <div class="form-group">
     <label for="stateSelect">State</label>
@@ -85,10 +85,14 @@
     </select>
   </div>
   <div class="form-group">
-  <label for="email">Email address:</label>
-  <input type="email" required class="form-control" id="email" >
+  <label for="zip">5 Digit Zip Code</label>
+  <input type="text" required pattern="^[0-9]{5}$" class="form-control zip needs-validation" id="zip" title="Please enter a valid US 5 digit zip." >
 </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <div class="form-group">
+  <label for="email">Email address:</label>
+  <input type="email" required class="form-control needs-validation" id="email" >
+</div>
+  <button type="submit" id="contactBtn"  class="btn btn-primary">Submit</button>
 </form>
 </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -102,10 +106,10 @@
       <div class="container-fluid">
           <div class="row justify-content-between">
               <div class="col-md-4 offset-md-2">
-                  <p>This page is intended for demonstration of concept only. Overwatch and Overwatch League are the property of Blizzard Entertainment.</p>
+                  <p> <br /><br /> This page is intended for demonstration of concept only. Overwatch and Overwatch League are the property of Blizzard Entertainment.</p>
               </div>
               <div class="col-md-6 ">
-                  <h5 class="title">Check us out!</h5>
+                  <h5 class="title"><br />Check us out!</h5>
                   <ul>
                       <li><a href="https://overwatchleague.com/en-us" target="_blank">Overwatch League Official Site</a></li>
                       <li><a href="#!">Contact Us!</a></li>
